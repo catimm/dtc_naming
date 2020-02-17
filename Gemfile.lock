@@ -126,6 +126,7 @@ GEM
     nio4r (2.5.2)
     nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
+    pg (1.2.2)
     popper_js (1.16.0)
     public_suffix (4.0.3)
     puma (3.12.2)
@@ -191,7 +192,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
     thin (1.7.2)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
@@ -239,11 +239,11 @@ DEPENDENCIES
   json (~> 1.8.6)
   listen (>= 3.0.5, < 3.2)
   modernizr-rails
+  pg
   puma
   rails (~> 5.2.3)
   sass-rails (~> 5.0)
   selenium-webdriver
-  sqlite3
   thin
   turbolinks (~> 5)
   tzinfo-data
