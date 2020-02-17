@@ -1,0 +1,160 @@
+@import "bootstrap";
+@import "font-awesome";
+
+$white: #fff;
+$black: #000;
+$grey: #ddd;
+$dell-blue: #0076ce;
+$dark-blue: #004478;
+$light-blue: #0dfbfb;
+$green: #00D479;
+$orange: #ff4900;
+
+.hidden {
+  display: none;
+}
+.active {
+  display: inline;
+}
+.row {
+  width: 100%;
+}
+.no-padding {
+  padding: 0 !important;
+}
+.center {
+  text-align: center;
+}
+// Functional use of colors for project
+.navbar {
+  background: $dell-blue;
+}
+.navbar-container {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.DTC-logo {
+  h1 {
+    margin: 0;
+    font-size: 2em;
+    a {
+      color: $white;
+      font-size: 1em;
+      margin-bottom: 0;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}
+.extra-nav {
+  color: $white;
+  font-size: 12px;
+  padding: 5px 0 0 0;
+}
+.main-nav-row {
+  margin-top: 10px;
+}
+.console-sign-in-button {
+  padding: 4px 12px;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+.nav-first-level {
+  color: $white;
+  font-size: 15px;
+  text-align: center;
+}
+.nav-panel-wrapper {
+    position: absolute;
+    bottom: 100%;
+    top: 100px;
+    height: auto;
+    overflow: visible;
+    z-index: 6002;
+    background-color: $dell-blue;
+    border-top: 1px solid $dark-blue;
+    color: #ddd;
+    font-size: 15px;
+    left: 40px;
+    right: 40px;
+}
+.m-nav-panel, .nav-sidebar-panel {
+    position: absolute;
+    right: 50%;
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+    max-width: 1200px;
+    width: calc(100% - 80px);
+    height: 100%;
+}
+.nav-sidebar-menu {
+    -ms-flex: 0 0 260px;
+    flex: 0 0 260px;
+    padding: 30px 0;
+    border-right: 1px solid #141a22;
+    font-size: 15px;
+    position: relative;
+    overflow: auto;
+}
+.m-nav-panel-wrapper:not(.m-transitioned) .m-nav-sidebar-menu .m-nav-panel-link:nth-child(1) {
+    transition-delay: 45ms;
+}
+.m-nav-panel-link {
+  margin: 5px 0;
+  a {
+    color: $grey;
+    font-size: 15px;
+  }
+  a:hover {
+    text-decoration: none;
+    color: $light-blue;
+  }
+  span {
+    display: block;
+    font-weight: 400;
+    color: $grey;
+    font-size: 12px;
+  }
+}
+
+.m-nav-panel-link-header {
+  padding-bottom: 15px;
+  a {
+    color: $white;
+    font-size: 16px !important;
+  }
+  a:hover {
+    text-decoration: none;
+    color: $light-blue;
+  }
+  span {
+    display: block;
+    font-weight: 400;
+    color: $grey;
+    font-size: 12px;
+  }
+}
+
+.m-nav-product-link {
+  margin: 5px 0;
+  a {
+    color: $white;
+    font-size: 15px;
+  }
+  a:hover {
+    text-decoration: none;
+    color: $light-blue;
+  }
+  span {
+    display: block;
+    font-weight: 400;
+    color: $grey;
+    font-size: 12px;
+  }
+}
+
+.nav-sidebar-products {
+  padding-top: 30px;
+  padding-left: 45px;
+}

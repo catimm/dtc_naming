@@ -1,0 +1,163 @@
+<html>
+<head> 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Dell Technologies Cloud (DTC) - Hybrid Cloud</title> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
+ </head> 
+ <body class="dtc"> 
+  <nav class="navbar" role="navigation">
+	<div class="container no-padding navbar-container">
+		<div class="row top-navbar-row">   
+	        	<div class="col-xs-10 col-sm-6">
+				<div class="DTC-logo d-none d-sm-block"> 
+			    		<h1><%= link_to "Dell Technologies Cloud", root_path %></h1> 
+			    	</div> 
+			    	<div class="DTC-logo d-none d-xs-block"> 
+			    		<h1>DTC</h1> 
+			    	</div>
+			</div>	
+			<div class="d-none d-sm-block col-sm-4">
+				<div class="row no-padding">
+					<div class="col-sm-5 center extra-nav">Contact Sales &nbsp; <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+					<div class="col-sm-4 center extra-nav">Support &nbsp; <i class="fa fa-caret-down" aria-hidden="true"></i></div> 
+					<div class="col-sm-3 center extra-nav">EN/US &nbsp; <i class="fa fa-caret-down" aria-hidden="true"></i></div> 
+				</div>
+			</div>
+			<div class="col-xs-2 col-sm-2 no-padding">
+				<button class="btn btn-success console-sign-in-button" role="button">Sign In to the Console</button>
+			</div>
+	    </div>
+	    <div class="row main-nav-row">
+	    		<div class="nav-first-level col-sm-1 no-padding" data-panel="nav-panel-platforms">Platforms</div> 
+	    		<div class="nav-first-level col-sm-1 no-padding" data-panel="nav-panel-services">Services</div> 
+        		<div class="nav-first-level col-sm-1 no-padding" data-panel="nav-panel-solutions">Solutions</div> 
+       		<div class="nav-first-level col-sm-1 no-padding" data-panel="nav-panel-learn">Learn</div> 
+        		<div class="nav-first-level col-sm-1 no-padding" data-panel="nav-panel-documentation">Documentation</div> 
+        		<div class="nav-first-level col-sm-2 no-padding" data-panel="nav-panel-partners">Partner Solutions</div> 
+        		<div class="nav-first-level col-sm-1 no-padding" data-panel="nav-panel-marketplace">Marketplace</div>
+       		<div class="nav-first-level col-sm-1 no-padding" data-panel="nav-panel-events">Events</div>
+        		<div class="nav-first-level col-sm-1 no-padding" data-panel="nav-panel-more">More...</div>
+	    	</div>
+		 <div class="d-none d-xs-block">
+			<!-- Collect the nav links, forms, and other content for toggling -->
+       		 <%= render 'layouts/collapse_navbar' %>
+		 </div>  <!-- /.nav links -->
+    </div> <!-- /.container -->
+ <div class="nav-panel-wrapper hidden"> 
+ <div id="nav-panel-platforms" class="row nav-sidebar-panel"> 
+  <div class="col-2 nav-sidebar-menu"> 
+   <div class="m-nav-panel-link"> 
+    <a href="#" data-sidebar="products-engineered" class="nav-panel-links"> Engineered</a> 
+   </div> 
+   <div class="m-nav-panel-link"> 
+    <a href="" data-sidebar="products-architectures" class="nav-panel-links"> Architectures</a> 
+   </div>  
+  </div> 
+  <div class="col-4 nav-sidebar-products" id="nav-sidebar-products"> 
+	  <div id="products-engineered" class="nav-panel-content active"> 
+	   <div class="m-nav-col-1"> 
+	    <div class="m-nav-panel-link-header m-nav-txt-large"> 
+	     <a href=""> Engineered</a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href=""> VCF on VxRail<span>Short product description</span> </a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href=""> VMC on Dell EMC<span>Short product description</span> </a> 
+	    </div>  
+	   </div> 
+	  </div> 
+	  <div id="products-architectures" class="nav-panel-content hidden"> 
+	   <div class="m-nav-col-1"> 
+	    <div class="m-nav-panel-link-header m-nav-txt-large"> 
+	     <a href=""> Architectures</a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href=""> VCF on PowerEdge<span>Short product description</span> </a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href=""> VCF on PowerMax<span>Short product description</span> </a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href=""> VCF on Unity<span>Short product description</span> </a> 
+	    </div>  
+	   </div> 
+	  </div> 
+ </div>
+ <div id="nav-panel-services" class="row nav-sidebar-panel hidden"> 
+  <div class="col-2 nav-sidebar-menu"> 
+   <div class="m-nav-panel-link"> 
+    <a href="" data-sidebar="products-storage" class="nav-panel-links"> Cloud Storage</a> 
+   </div> 
+   <div class="m-nav-panel-link"> 
+    <a href="" data-sidebar="products-dp" class="nav-panel-links"> Data Protection</a> 
+   </div> 
+   <div class="m-nav-panel-link"> 
+    <a href="" data-sidebar="products-networking" class="nav-panel-links"> Networking</a> 
+   </div> 
+   <div class="m-nav-panel-link"> 
+    <a href="" data-sidebar="products-apps" class="nav-panel-links"> Modern Apps</a> 
+   </div> 
+  </div> 
+  <div class="col-4 nav-sidebar-products" id="nav-sidebar-products"> 
+	  <div id="products-storage" class="nav-panel-content hidden"> 
+	   <div class="m-nav-col-1"> 
+	    <div class="m-nav-panel-link-header m-nav-txt-large"> 
+	     <a href=""> Cloud Storage</a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href=""> Cloud Storage Services<span>Short product description</span> </a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href=""> Isilon FSOne on GCP<span>Short product description</span> </a> 
+	    </div>  
+	   </div> 
+	  </div> 
+	  <div id="products-dp" class="nav-panel-content hidden"> 
+	   <div class="m-nav-col-1"> 
+	    <div class="m-nav-panel-link-header m-nav-txt-large"> 
+	     <a href="https://aws.amazon.com/sumerian/?nc2=h_ql_prod_ar_arvr"> Data Protection</a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href=""> Data Protection Suite<span>Short product description</span> </a> 
+	    </div> 
+	   </div>  
+	  </div> 
+	  <div id="products-networking" class="nav-panel-content hidden"> 
+	   <div class="m-nav-col-1"> 
+	    <div class="m-nav-panel-link-header m-nav-txt-large"> 
+	     <a href=""> Networking</a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href=""> Product 1<span>Short product description</span> </a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href=""> Product 2<span>Short product description</span> </a> 
+	    </div>  
+	   </div>  
+	  </div> 
+	  <div id="products-apps" class="nav-panel-content hidden"> 
+	   <div class="m-nav-col-1"> 
+	    <div class="m-nav-panel-link-header m-nav-txt-large"> 
+	     <a href=""> Modern Apps</a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href=""> Pivotal PKS<span>Short product description</span> </a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href=""> Project Pacific<span>Short product description</span> </a> 
+	    </div>
+	    <div class="m-nav-product-link"> 
+	     <a href=""> Tanzu<span>Short product description</span> </a> 
+	    </div> 
+	   </div> 
+	  </div> 
+ 	</div>
+ </div>  
+ <div id="nav-panel-solutions" class="row nav-sidebar-panel hidden" data-lb-comp="global-nav-panel" data-lb-comp-registered="true"> 
+  
+</div>
+	</nav> 
+</body>
+</html>

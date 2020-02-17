@@ -1,0 +1,13 @@
+current directory: /Users/carltimm/Documents/Aptana/dtc_naming/vendor/bundle/gems/json-1.8.6/ext/json
+/Users/carltimm/.rbenv/versions/2.6.3/bin/ruby -I /Users/carltimm/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20200216-33595-1k1ikdz.rb extconf.rb
+creating Makefile
+
+current directory: /Users/carltimm/Documents/Aptana/dtc_naming/vendor/bundle/gems/json-1.8.6/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/carltimm/Documents/Aptana/dtc_naming/vendor/bundle/gems/json-1.8.6/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/carltimm/Documents/Aptana/dtc_naming/vendor/bundle/gems/json-1.8.6/ext/json
+make "DESTDIR=" install

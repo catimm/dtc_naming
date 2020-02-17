@@ -1,0 +1,15 @@
+current directory: /Users/carltimm/Documents/Aptana/dtc_naming/vendor/bundle/gems/websocket-driver-0.7.1/ext/websocket-driver
+/Users/carltimm/.rbenv/versions/2.6.3/bin/ruby -I /Users/carltimm/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20200215-31715-yerso2.rb extconf.rb
+creating Makefile
+
+current directory: /Users/carltimm/Documents/Aptana/dtc_naming/vendor/bundle/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/carltimm/Documents/Aptana/dtc_naming/vendor/bundle/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/carltimm/Documents/Aptana/dtc_naming/vendor/bundle/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20200215-31715-wu1o8w

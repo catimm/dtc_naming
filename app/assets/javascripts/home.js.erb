@@ -1,0 +1,67 @@
+$(function () {
+
+		// show dropdown on mouseover
+		$(document).on('mouseover', '.nav-first-level', function () {
+		   $(".nav-first-level").css("color","#fff");
+		   $(this).css("color","#0dfbfb");
+		   var nav_category = "#" + ($(this).data("panel"));
+		   
+		   if (nav_category == "#nav-panel-products" || nav_category == "#nav-panel-platforms" || nav_category == "#nav-panel-services") {
+			   // first hide other dropdowns
+			   if ($('.nav-sidebar-panel').hasClass("active")) {
+			   	$('.nav-sidebar-panel').removeClass("active");
+			   	$('.nav-sidebar-panel').addClass("hidden");
+			   }
+			   if ($('.nav-panel-wrapper').hasClass("hidden")) {
+			   	$('.nav-panel-wrapper').removeClass("hidden");
+			   	$('.nav-panel-wrapper').addClass("active");
+			   }
+			   
+			   if ($(nav_category).hasClass("hidden")) {
+			   	$(nav_category).removeClass("hidden");
+			   	$(nav_category).addClass("active");
+			   }
+			   var this_height = $(nav_category).children('.nav-sidebar-products').height() + 100;
+			   $('.nav-panel-wrapper').css("height",this_height);
+			} 
+		}); 
+		
+		//hide dropdown on mouseleave
+		$(document).on('mouseleave', '.nav-panel-wrapper', function () {
+		   if ($('.nav-panel-wrapper').hasClass("active")) {
+		   	$('.nav-panel-wrapper').removeClass("active");
+		   	$('.nav-panel-wrapper').addClass("hidden");
+		   }
+		   if ($('.nav-sidebar-panel').hasClass("active")) {
+		   	$('.nav-sidebar-panel').removeClass("active");
+		   	$('.nav-sidebar-panel').addClass("hidden");
+		   }
+		   $(".nav-first-level").css("color","#fff");
+		}); 
+		$(document).on('mouseover', '.top-navbar-row', function () {
+		   if ($('.nav-panel-wrapper').hasClass("active")) {
+		   	$('.nav-panel-wrapper').removeClass("active");
+		   	$('.nav-panel-wrapper').addClass("hidden");
+		   }
+		   if ($('.nav-sidebar-panel').hasClass("active")) {
+		   	$('.nav-sidebar-panel').removeClass("active");
+		   	$('.nav-sidebar-panel').addClass("hidden");
+		   }
+		   $(".nav-first-level").css("color","#fff");
+		}); 
+		
+		// show side panel
+		$(document).on('mouseover', '.nav-panel-links', function () {
+		   // first hide other dropdowns
+		   if ($('.nav-panel-content').hasClass("active")) {
+		   	$('.nav-panel-content').removeClass("active");
+		   	$('.nav-panel-content').addClass("hidden");
+		   }
+		   var nav_panel = "#" + ($(this).data("sidebar"));
+		   if ($(nav_panel).hasClass("hidden")) {
+		   	$(nav_panel).removeClass("hidden");
+		   	$(nav_panel).addClass("active");
+		   }
+		}); 
+
+});

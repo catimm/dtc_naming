@@ -1,0 +1,16 @@
+current directory: /Users/carltimm/Documents/Aptana/dtc_naming/vendor/bundle/gems/eventmachine-1.2.7/ext/fastfilereader
+/Users/carltimm/.rbenv/versions/2.6.3/bin/ruby -I /Users/carltimm/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20200216-34802-1kd9ye.rb extconf.rb
+creating Makefile
+
+current directory: /Users/carltimm/Documents/Aptana/dtc_naming/vendor/bundle/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /Users/carltimm/Documents/Aptana/dtc_naming/vendor/bundle/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+
+current directory: /Users/carltimm/Documents/Aptana/dtc_naming/vendor/bundle/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 fastfilereaderext.bundle ./.gem.20200216-34802-15u4p8q

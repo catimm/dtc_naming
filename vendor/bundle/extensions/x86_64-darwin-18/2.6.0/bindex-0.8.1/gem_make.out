@@ -1,0 +1,15 @@
+current directory: /Users/carltimm/Documents/Aptana/dtc_naming/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+/Users/carltimm/.rbenv/versions/2.6.3/bin/ruby -I /Users/carltimm/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20200215-6233-eyjfp6.rb extconf.rb
+creating Makefile
+
+current directory: /Users/carltimm/Documents/Aptana/dtc_naming/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/carltimm/Documents/Aptana/dtc_naming/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/carltimm/Documents/Aptana/dtc_naming/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20200215-6233-16lqp7y/skiptrace/internal
