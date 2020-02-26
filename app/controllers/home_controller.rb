@@ -8,7 +8,7 @@ class HomeController < ApplicationController
   
   end # end index action
   
-  def platforms_and_services
+  def three_categories
   
   end # end index action
   

@@ -1,0 +1,167 @@
+<html>
+ <body class="dtc"> 
+  <nav class="navbar" role="navigation">
+	<div class="container no-padding navbar-container">
+		<div class="row top-navbar-row">   
+	        	<div class="col-xs-10 col-sm-6">
+				<div class="DTC-logo d-none d-sm-block"> 
+			    		<h1><%= link_to "Dell Technologies Cloud", root_path %></h1> 
+			    	</div> 
+			    	<div class="DTC-logo d-none d-xs-block"> 
+			    		<h1>DTC</h1> 
+			    	</div>
+			</div>	
+			<div class="d-none d-sm-block col-sm-4">
+				<div class="row no-padding">
+					<div class="col-sm-5 center extra-nav">Contact Sales &nbsp; <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+					<div class="col-sm-4 center extra-nav">Support &nbsp; <i class="fa fa-caret-down" aria-hidden="true"></i></div> 
+					<div class="col-sm-3 center extra-nav">EN/US &nbsp; <i class="fa fa-caret-down" aria-hidden="true"></i></div> 
+				</div>
+			</div>
+			<div class="col-xs-2 col-sm-2 no-padding">
+				<button class="btn btn-success console-sign-in-button" role="button">Sign In to the Console</button>
+			</div>
+	    </div>
+	    <div class="row main-nav-row">
+	    		<div id="tl-platform" class="nav-first-level col-sm-1 no-padding" data-panel="nav-panel-platforms">Platforms</div> 
+	    		<div id="tl-vd" class="nav-first-level col-sm-2 no-padding" data-panel="nav-panel-vd">Validated Designs</div>
+	    		<div id="tl-services" class="nav-first-level col-sm-1 no-padding" data-panel="nav-panel-services">Services</div> 
+        		<div id="tl-solutions" class="nav-first-level col-sm-1 no-padding" data-panel="nav-panel-solutions">Solutions</div> 
+       		<div id="tl-learn" class="nav-first-level col-sm-1 no-padding" data-panel="nav-panel-learn">Learn</div>
+        		<div id="tl-partners" class="nav-first-level col-sm-2 no-padding" data-panel="nav-panel-partners">Partner Solutions</div> 
+        		<div id="tl-marketplace" class="nav-first-level col-sm-1 no-padding" data-panel="nav-panel-marketplace">Marketplace</div>
+       		<div id="tl-events" class="nav-first-level col-sm-1 no-padding" data-panel="nav-panel-events">Events</div>
+        		<div id="tl-more" class="nav-first-level col-sm-1 no-padding" data-panel="nav-panel-more">More...</div>
+	    	</div>
+		 <div class="d-none d-xs-block">
+			<!-- Collect the nav links, forms, and other content for toggling -->
+       		 <%= render 'layouts/collapse_navbar' %>
+		 </div>  <!-- /.nav links -->
+    </div> <!-- /.container -->
+ <div class="nav-panel-wrapper hidden"> 
+ <div id="nav-panel-platforms" class="nav-sidebar-panel hidden"> 
+  <div class="nav-sidebar-menu"> 
+   <div class="m-nav-panel-link"> 
+    <a href="#" data-sidebar="platforms-featured" class="nav-panel-links first"> Featured Platforms</a> 
+   </div> 
+  </div> 
+  <div class="nav-sidebar-products" id="nav-sidebar-products"> 
+	  <div id="platforms-featured" class="nav-panel-content active"> 
+	   <div class="m-nav-col-1"> 
+	    <div class="m-nav-panel-link-header m-nav-txt-large"> 
+	     <a href="javascript:;"> Featured Platforms</a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> VCF on VxRail<span>Turnkey HCI hybrid cloud</span> </a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> VMC on Dell EMC<span>Fully managed hybrid cloud</span> </a> 
+	    </div>  
+	   </div> 
+	  </div> 
+ 	</div>
+ </div>
+ <div id="nav-panel-vd" class="row nav-sidebar-panel hidden"> 
+  <div class="col-2 nav-sidebar-menu"> 
+   <div class="m-nav-panel-link"> 
+    <a href="#" data-sidebar="reference-architecture" class="nav-panel-links"> Reference Architectures</a> 
+   </div> 
+  </div> 
+  <div class="col-4 nav-sidebar-products" id="nav-sidebar-products"> 
+	  <div id="reference-architecture" class="nav-panel-content active"> 
+	   <div class="m-nav-col-1"> 
+	    <div class="m-nav-panel-link-header m-nav-txt-large"> 
+	     <a href="javascript:;"> Reference Architectures</a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> VCF on PowerEdge MX<span>VMware software on Dell's kinetic infrastructure</span> </a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> VCF on PowerMax<span>Scale-out storage platform</span> </a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> VCF on PowerOne<span>CI hybrid cloud</span> </a> 
+	    </div>
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> VCF on Unity XT<span>Multi-cloud storage for performance and efficiency</span> </a> 
+	    </div>  
+	   </div> 
+	  </div> 
+ 	</div>
+ </div>
+ <div id="nav-panel-services" class="row nav-sidebar-panel hidden"> 
+  <div class="col-2 nav-sidebar-menu"> 
+   <div class="m-nav-panel-link"> 
+    <a href="javascript:;" data-sidebar="services-dp" class="nav-panel-links for-services"> Data Protection</a> 
+   </div> 
+   <div class="m-nav-panel-link"> 
+    <a href="javascript:;" data-sidebar="services-apps" class="nav-panel-links for-services"> Modern Apps</a> 
+   </div>
+   <div class="m-nav-panel-link"> 
+    <a href="javascript:;" data-sidebar="services-networking" class="nav-panel-links for-services"> Networking</a> 
+   </div>  
+   <div class="m-nav-panel-link"> 
+    <a href="javascript:;" data-sidebar="services-storage" class="nav-panel-links for-services"> Storage</a> 
+   </div> 
+  </div> 
+  <div class="col-4 nav-sidebar-products" id="nav-sidebar-products"> 
+	  <div id="services-dp" class="nav-panel-content for-services active"> 
+	   <div class="m-nav-col-1"> 
+	    <div class="m-nav-panel-link-header m-nav-txt-large"> 
+	     <a href="https://aws.amazon.com/sumerian/?nc2=h_ql_prod_ar_arvr"> Data Protection</a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> Data Protection Suite<span>Comprehensive replication, snapshot, backup and disaster recovery</span> </a> 
+	    </div> 
+	   </div>  
+	  </div> 
+	  <div id="services-networking" class="nav-panel-content for-services hidden"> 
+	   <div class="m-nav-col-1"> 
+	    <div class="m-nav-panel-link-header m-nav-txt-large"> 
+	     <a href="javascript:;"> Networking</a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> Product 1<span>Short product description</span> </a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> Product 2<span>Short product description</span> </a> 
+	    </div>  
+	   </div>  
+	  </div> 
+	  <div id="services-apps" class="nav-panel-content for-services hidden"> 
+	   <div class="m-nav-col-1"> 
+	    <div class="m-nav-panel-link-header m-nav-txt-large"> 
+	     <a href="javascript:;"> Modern Apps</a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> Pivotal PKS<span>Production ready Kubernetes for the enterprise</span> </a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> Project Pacific<span>Kubernetes built-in to vSphere 7.0</span> </a> 
+	    </div>
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> Tanzu<span>Build, run and manage modern apps</span> </a> 
+	    </div> 
+	   </div> 
+	  </div> 
+	  <div id="services-storage" class="nav-panel-content for-services hidden"> 
+	   <div class="m-nav-col-1"> 
+	    <div class="m-nav-panel-link-header m-nav-txt-large"> 
+	     <a href="javascript:;"> Cloud Storage</a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> Cloud Storage Services<span>Short product description</span> </a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> Isilon FSOne on GCP<span>Short product description</span> </a> 
+	    </div>  
+	   </div> 
+	  </div> 
+ 	</div>
+ </div>  
+ <div id="nav-panel-solutions" class="row nav-sidebar-panel hidden" data-lb-comp="global-nav-panel" data-lb-comp-registered="true"> 
+  
+</div>
+	</nav> 
+</body>
+</html>

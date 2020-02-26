@@ -2,11 +2,14 @@
 @import "font-awesome";
 
 $white: #fff;
+$whitesmoke: #F5F5F5;
 $black: #000;
 $grey: #ddd;
 $dell-blue: #0076ce;
+$dell-db: #00447c;
 $dark-blue: #004478;
 $light-blue: #0dfbfb;
+$yellow: #FFC000;
 $green: #00D479;
 $orange: #ff4900;
 
@@ -25,9 +28,10 @@ $orange: #ff4900;
 .center {
   text-align: center;
 }
+
 // Functional use of colors for project
 .navbar {
-  background: $dell-blue;
+  background: $dell-db;
 }
 .navbar-container {
   margin-top: 10px;
@@ -59,6 +63,9 @@ $orange: #ff4900;
   padding: 4px 12px;
   font-size: 0.85em;
   font-weight: 600;
+  background: $dell-blue;
+  color: $white;
+  border: 1px solid $white;
 }
 .nav-first-level {
   color: $white;
@@ -69,46 +76,49 @@ $orange: #ff4900;
     position: absolute;
     bottom: 100%;
     top: 100px;
-    height: auto;
+    height: 450px !important;
     overflow: visible;
     z-index: 6002;
-    background-color: $dell-blue;
-    border-top: 1px solid $dark-blue;
+    background-color: $dell-db;
+    border-top: 1px solid $dell-blue;
     color: #ddd;
     font-size: 15px;
-    left: 40px;
-    right: 40px;
+    left: 60px;
+    right: 120px;
 }
 .m-nav-panel, .nav-sidebar-panel {
     position: absolute;
-    right: 50%;
+    right: 55%;
     -ms-transform: translateX(50%);
     transform: translateX(50%);
     max-width: 1200px;
-    width: calc(100% - 80px);
+    width: calc(100% - 180px);
     height: 100%;
 }
 .nav-sidebar-menu {
     -ms-flex: 0 0 260px;
     flex: 0 0 260px;
     padding: 30px 0;
-    border-right: 1px solid #141a22;
+    border-right: 1px solid $dell-blue;
     font-size: 15px;
-    position: relative;
     overflow: auto;
+    width: 20%;
+    float: left;
+    height: 100%;
+    margin-right: 30px;
 }
 .m-nav-panel-wrapper:not(.m-transitioned) .m-nav-sidebar-menu .m-nav-panel-link:nth-child(1) {
     transition-delay: 45ms;
 }
 .m-nav-panel-link {
-  margin: 5px 0;
+  margin: 0 0 15px 0;
   a {
     color: $grey;
     font-size: 15px;
   }
   a:hover {
     text-decoration: none;
-    color: $light-blue;
+    color: $yellow;
   }
   span {
     display: block;
@@ -116,6 +126,9 @@ $orange: #ff4900;
     color: $grey;
     font-size: 12px;
   }
+}
+.nav-panel-links.first {
+  color: $yellow;
 }
 
 .m-nav-panel-link-header {
@@ -126,7 +139,7 @@ $orange: #ff4900;
   }
   a:hover {
     text-decoration: none;
-    color: $light-blue;
+    color: $yellow;
   }
   span {
     display: block;
@@ -137,14 +150,14 @@ $orange: #ff4900;
 }
 
 .m-nav-product-link {
-  margin: 5px 0;
+  margin: 5px 0 20px 0;
   a {
     color: $white;
     font-size: 15px;
   }
   a:hover {
     text-decoration: none;
-    color: $light-blue;
+    color: $yellow;
   }
   span {
     display: block;
@@ -157,4 +170,13 @@ $orange: #ff4900;
 .nav-sidebar-products {
   padding-top: 30px;
   padding-left: 45px;
+  width: 75%;
+  float: left;
+  position: relative;
+}
+.current-link {
+  color: $yellow !important;
+}
+.homepage-top-row {
+  margin-top: 100px;
 }
