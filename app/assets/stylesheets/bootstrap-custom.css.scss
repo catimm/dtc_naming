@@ -12,6 +12,7 @@ $light-blue: #0dfbfb;
 $yellow: #FFC000;
 $green: #00D479;
 $orange: #ff4900;
+$dark-gray: #484848;
 
 .hidden {
   display: none;
@@ -176,6 +177,9 @@ $orange: #ff4900;
 }
 .current-link {
   color: $yellow !important;
+}
+.directions {
+  color: $dark-gray;
 }
 .homepage-top-row {
   margin-top: 100px;

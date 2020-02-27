@@ -67,21 +67,21 @@
     <a href="#" data-sidebar="reference-architecture" class="nav-panel-links"> Reference Architectures</a> 
    </div> 
   </div> 
-  <div class="col-4 nav-sidebar-products" id="nav-sidebar-products"> 
+  <div class="col-4 nav-sidebar-products" id="nav-sidebar-vd"> 
 	  <div id="reference-architecture" class="nav-panel-content active"> 
 	   <div class="m-nav-col-1"> 
 	    <div class="m-nav-panel-link-header m-nav-txt-large"> 
 	     <a href="javascript:;"> Reference Architectures</a> 
 	    </div> 
 	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> VCF on PowerOne<span>CI hybrid cloud</span> </a> 
+	    </div>
+	    <div class="m-nav-product-link"> 
 	     <a href="javascript:;"> VCF on PowerEdge MX<span>VMware software on Dell's kinetic infrastructure</span> </a> 
 	    </div> 
 	    <div class="m-nav-product-link"> 
 	     <a href="javascript:;"> VCF on PowerMax<span>Scale-out storage platform</span> </a> 
 	    </div> 
-	    <div class="m-nav-product-link"> 
-	     <a href="javascript:;"> VCF on PowerOne<span>CI hybrid cloud</span> </a> 
-	    </div>
 	    <div class="m-nav-product-link"> 
 	     <a href="javascript:;"> VCF on Unity XT<span>Multi-cloud storage for performance and efficiency</span> </a> 
 	    </div>  
@@ -92,6 +92,9 @@
  <div id="nav-panel-services" class="row nav-sidebar-panel hidden"> 
   <div class="col-2 nav-sidebar-menu"> 
    <div class="m-nav-panel-link"> 
+    <a href="javascript:;" data-sidebar="services-storage" class="nav-panel-links for-services"> Storage</a> 
+   </div>
+   <div class="m-nav-panel-link"> 
     <a href="javascript:;" data-sidebar="services-dp" class="nav-panel-links for-services"> Data Protection</a> 
    </div> 
    <div class="m-nav-panel-link"> 
@@ -99,13 +102,23 @@
    </div>
    <div class="m-nav-panel-link"> 
     <a href="javascript:;" data-sidebar="services-networking" class="nav-panel-links for-services"> Networking</a> 
-   </div>  
-   <div class="m-nav-panel-link"> 
-    <a href="javascript:;" data-sidebar="services-storage" class="nav-panel-links for-services"> Storage</a> 
-   </div> 
+   </div>   
   </div> 
-  <div class="col-4 nav-sidebar-products" id="nav-sidebar-products"> 
-	  <div id="services-dp" class="nav-panel-content for-services active"> 
+  <div class="col-4 nav-sidebar-products" id="nav-sidebar-services"> 
+	  <div id="services-storage" class="nav-panel-content for-services active"> 
+	   <div class="m-nav-col-1"> 
+	    <div class="m-nav-panel-link-header m-nav-txt-large"> 
+	     <a href="javascript:;"> Cloud Storage</a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> Cloud Storage Services<span>Short product description</span> </a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> Isilon FSOne on GCP<span>Short product description</span> </a> 
+	    </div>  
+	   </div> 
+	  </div>
+	  <div id="services-dp" class="nav-panel-content for-services hidden"> 
 	   <div class="m-nav-col-1"> 
 	    <div class="m-nav-panel-link-header m-nav-txt-large"> 
 	     <a href="https://aws.amazon.com/sumerian/?nc2=h_ql_prod_ar_arvr"> Data Protection</a> 
@@ -143,25 +156,90 @@
 	     <a href="javascript:;"> Tanzu<span>Build, run and manage modern apps</span> </a> 
 	    </div> 
 	   </div> 
-	  </div> 
-	  <div id="services-storage" class="nav-panel-content for-services hidden"> 
-	   <div class="m-nav-col-1"> 
-	    <div class="m-nav-panel-link-header m-nav-txt-large"> 
-	     <a href="javascript:;"> Cloud Storage</a> 
-	    </div> 
-	    <div class="m-nav-product-link"> 
-	     <a href="javascript:;"> Cloud Storage Services<span>Short product description</span> </a> 
-	    </div> 
-	    <div class="m-nav-product-link"> 
-	     <a href="javascript:;"> Isilon FSOne on GCP<span>Short product description</span> </a> 
-	    </div>  
-	   </div> 
-	  </div> 
+	  </div>  
  	</div>
  </div>  
- <div id="nav-panel-solutions" class="row nav-sidebar-panel hidden" data-lb-comp="global-nav-panel" data-lb-comp-registered="true"> 
-  
-</div>
-	</nav> 
+ <div id="nav-panel-solutions" class="nav-sidebar-panel hidden"> 
+  <div class="nav-sidebar-menu"> 
+   <div class="m-nav-panel-link"> 
+    <a href="#" data-sidebar="solutions-uc" class="nav-panel-links for-solutions"> By Use Case</a> 
+   </div> 
+   <div class="m-nav-panel-link"> 
+    <a href="#" data-sidebar="solutions-industry" class="nav-panel-links for-solutions"> By Industry</a> 
+   </div>
+  </div> 
+  <div class="nav-sidebar-products" id="nav-sidebar-solutions"> 
+	  <div id="solutions-uc" class="nav-panel-content for-solutions active"> 
+	   <div class="m-nav-col-1"> 
+	    <div class="m-nav-panel-link-header m-nav-txt-large"> 
+	     <a href="javascript:;"> By Use Case</a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> Backup & Restore<span>Robust backup and distaster recovery solutions</span> </a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> Cloud Migrations<span>Easily migrate apps and data between on-premises and public cloud</span> </a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> Containers<span>Utilize microservices for every workload</span> </a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> DevOps<span>Quickly build secure modern apps using DevOps practices</span> </a> 
+	    </div>
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> Device Management<span>Unified Workspaces is a comprehensive way to manage devices from the Cloud</span> </a> 
+	    </div>  
+	   </div> 
+	  </div>
+	  <div id="solutions-industry" class="nav-panel-content for-solutions hidden"> 
+	   <div class="m-nav-col-1"> 
+	    <div class="m-nav-panel-link-header m-nav-txt-large"> 
+	     <a href="javascript:;"> By Industry</a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> Financial Services<span>Develop secure and innovative solutions to increase shareholder value</span> </a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> Healthcare<span>Increase innovation, improve security and compliance</span> </a> 
+	    </div>
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> Manufacturing<span>Optimize production and speed time-to-market</span> </a> 
+	    </div> 
+	    <div class="m-nav-product-link"> 
+	     <a href="javascript:;"> Media and Entertainment<span>Process, store, deliver, and analyze all your video and media content</span> </a> 
+	    </div>  
+	   </div> 
+	  </div>  
+ 	</div>
+ </div>
+</nav> 
+<section>
+	<div class="container">
+		<div class="section">
+			<div class="row homepage-top-row">
+				<div class="col-12">
+					<h4 class="directions">Questions raised by this approach:</h4>
+					<ul>
+						<li>
+							<h6 class="directions">Is 'Platforms,' 'Validated Designs,' and 'Services' the right names for these categories?</h6>
+						</li>
+						<li>
+							<h6 class="directions">Given Dell's history, will calling our product offerings "Services" cause confusion with Professional Services offrings?</h6>
+						</li>
+						<li>
+							<h6 class="directions">Does 'Platforms' belong on the top-level nav? It has no categories beneath it, just products....</h6>
+						</li>
+						<li>
+							<h6 class="directions">Does 'Validated Designs' belong on the top-level nav? It has no categories beneath it, just products....</h6>
+						</li>
+						<li>
+							<h6 class="directions">Have we defined what qualifies as a 'Solution'?</h6>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 </body>
 </html>
