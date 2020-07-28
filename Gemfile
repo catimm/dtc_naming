@@ -45,7 +45,7 @@ gem 'elusive-icons-sass'
 
 # enable jquery & json functionality
 gem 'jquery-ui-rails'
-gem 'json', '~> 1.8.6'
+gem 'json', '~> 2.3.0'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
